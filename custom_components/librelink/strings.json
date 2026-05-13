@@ -1,0 +1,35 @@
+{
+  "title": "LibreLink integration",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Enter your mail and password",
+        "description": "Documentation: https://github.com/gillesvs/librelink",
+        "data": {
+          "username": "Mail",
+          "password": "Password",
+          "Country": "Select your region",
+          "unit_of_measurement": "Unit for glucose measurement"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate LibreLink",
+        "description": "If you updated LibreLink Up and accepted new Terms of Service, re-enter your credentials to reconnect.",
+        "data": {
+          "username": "Mail",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "auth": "Username/Password is wrong.",
+      "connection": "Unable to connect to the server.",
+      "unknown": "Unknown error occurred."
+    },
+    "abort": {
+      "already_configured": "Device is already configured",
+      "reauth_successful": "Re-authentication was successful"
+    }
+  },
+  "options": {}
+}
